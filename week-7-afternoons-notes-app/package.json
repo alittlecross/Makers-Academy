@@ -1,0 +1,23 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "a notes app",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alittlecross/notes-app.git"
+  },
+  "author": "alittlecross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alittlecross/notes-app/issues"
+  },
+  "homepage": "https://github.com/alittlecross/notes-app#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {}
+}

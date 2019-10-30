@@ -1,0 +1,19 @@
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+<div id='container'>
+
+  <div id='heading'>Battle!</div>
+
+  <div id='winner'>
+    <img src='images/<%= @game.winner %>.png' alt='Avatar'>
+    <div id='friend-0'><%= @game.players[@game.winner].name %></div>
+    
+    <div id='winner-message'>winner</div>
+
+    <form id='names' action='/' method='get'>
+      <input id='button' type='submit' value='Re-match !!!'>
+    </form>
+
+  </div>
+
+</div>

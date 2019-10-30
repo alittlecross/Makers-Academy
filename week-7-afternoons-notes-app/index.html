@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    
+    <title>Notes</title>
+
+    <link rel='stylesheet' type='text/css' href='css/main.css'>
+
+    <script src='src/model/note-model.js'></script>
+    <script src='src/model/list-model.js'></script>
+    <script src='src/view/note-view.js'></script>
+    <script src='src/view/list-view.js'></script>
+    <script src='src/controller/controller.js'></script>
+
+    <script>
+      var list = new List()
+      list.createNote('Birthday invite list: Lauren, Isla, Sam, Will, Kemal, Matthew, Awad, James, Lucie, Richard, Alice, Govind, Matt, Jess, Ollie, Em, Soph, Mum, Dad, Phil, Gilly')
+      list.createNote('Books: Envisioning Information')
+      var controller = new Controller(list)
+      controller.html('app')
+    </script>
+    
+  </head>
+  <body>
+
+    <div id='app'></div>
+
+  </body>
+</html>

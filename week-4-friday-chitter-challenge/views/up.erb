@@ -1,0 +1,19 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id='form'>
+
+    <form id='sign-up-form' action='/sign_up' method='post'></form>
+    <input class='form pad-me' id='sign-up' form='sign-up-form' type='text' name='username' placeholder='username'>
+    <input class='form pad-me' id='sign-up' form='sign-up-form' type='text' name='name' placeholder='name'>
+    <input class='form pad-me' id='sign-up' form='sign-up-form' type='text' name='email' placeholder='email'>
+    <input class='form pad-me' id='sign-up' form='sign-up-form' type='password' name='password' placeholder='password'>
+    <input class='form' id='sign-up' form='sign-up-form' type='password' name='repassword' placeholder='re-enter password'>
+    <button class='form' form='sign-up-form' type='submit' value='submit'>sign up</button>
+    <div class='form' >go <a href='/'>back</a></div>
+    <div class='form' ><%= flash[:sign_up] %></div>
+
+  </div>
+</body>

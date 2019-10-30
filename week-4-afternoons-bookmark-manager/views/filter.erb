@@ -1,0 +1,46 @@
+<link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+
+<div id='heading'>Bookmark Manager</div>
+<div id='sign-out'><a href='/sign_out'>Sign Out</a></div>
+<table>
+  <tr>
+    <th id='website'>website</th>
+    <th id='address'>address</th>
+    <th id='comments'>comments</th>
+    <th id='tags'>tags</th>
+    <th id='update'>update</th>
+    <th id='delete'>delete</th>
+  </tr>
+
+  <% @filter.each do |bookmark| %>
+  <tr>
+    <td><%= bookmark.title %></td>
+    <td><div class='url'><a href='<%= bookmark.url %>' target='_blank'><%= bookmark.url %></a></div></td>
+    
+    <td>
+      <% bookmark.comments.each do |comment| %>
+      <div class='comment'><%= comment.comment %></div>
+      <% end %>
+      <a class='add-comment' href='/<%= bookmark.bookmark_id %>/comment'>add</a>
+    </td>
+
+    <td class='tags'>
+      <% bookmark.tags.each do |tag| %>
+      <div class='tag'><a href='/<%= tag.tag %>/filter'><%= tag.tag %></a></div>
+      <% end %>
+      <a href='/<%= bookmark.bookmark_id %>/tag'>add</a>
+    </td>
+    
+    <td><a href='/<%= bookmark.bookmark_id %>/update'>update</a></td>
+    <td><a href='/<%= bookmark.bookmark_id %>/delete'>delete</a></td>
+  </tr>
+  <% end %>
+
+</table>
+
+<form action='/create' method='post' autocomplete='off'>
+  <input id='left-input' type='text' name='title' placeholder='website'>
+  <input id='right-input' type='text' name='url' placeholder='address'>
+  <input id='submit-button' type='submit' value='add'>
+  <a href='/bookmarks'>clear filter</a>
+</form>

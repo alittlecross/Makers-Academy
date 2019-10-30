@@ -1,0 +1,12 @@
+<link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+
+<div id='banner'>Bookmark Manager</div>
+<form action='/make_update' method='post' autocomplete='off'>
+  <input type='hidden' name='bookmark_id' value='<%= @bookmark.bookmark_id %>'>
+  <input id='left-input' type='text' name='title' value='<%= @bookmark.title %>'>
+  <input id='right-input' type='text' name='url' value='<%= @bookmark.url %>'>
+  <input id='submit-button' type='submit' value='update'>
+  <a href='/bookmarks'>cancel</a>
+</form>
+
+<div><%= flash[:update] %></div>

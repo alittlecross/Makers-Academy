@@ -1,0 +1,243 @@
+/* #region Grid Setup */
+
+#player-name-header { grid-area: PNH; }
+#frame-0 { grid-area: FFA; }
+#frame-1 { grid-area: FFB; }
+#frame-2 { grid-area: FFC; }
+#frame-3 { grid-area: FFD; }
+#frame-4 { grid-area: FFE; }
+#frame-5 { grid-area: FFF; }
+#frame-6 { grid-area: FFG; }
+#frame-7 { grid-area: FFH; }
+#frame-8 { grid-area: FFI; }
+#frame-9 { grid-area: FFJ; }
+
+#player-name { grid-area: PNN; }
+#ball-0 { grid-area: FAA; }
+#ball-1 { grid-area: FAB; }
+#ball-2 { grid-area: FBA; }
+#ball-3 { grid-area: FBB; }
+#ball-4 { grid-area: FCA; }
+#ball-5 { grid-area: FCB; }
+#ball-6 { grid-area: FDA; }
+#ball-7 { grid-area: FDB; }
+#ball-8 { grid-area: FEA; }
+#ball-9 { grid-area: FEB; }
+#ball-10 { grid-area: DFA; }
+#ball-11 { grid-area: DFB; }
+#ball-12 { grid-area: FGA; }
+#ball-13 { grid-area: FGB; }
+#ball-14 { grid-area: FHA; }
+#ball-15 { grid-area: FHB; }
+#ball-16 { grid-area: FIA; }
+#ball-17 { grid-area: FIB; }
+#ball-18 { grid-area: FJA; }
+#ball-19 { grid-area: FJB; }
+#ball-20 { grid-area: FJC; }
+#total-0 { grid-area: FTA; }
+#total-1 { grid-area: FTB; }
+#total-2 { grid-area: FTC; }
+#total-3 { grid-area: FTD; }
+#total-4 { grid-area: FTE; }
+#total-5 { grid-area: FTF; }
+#total-6 { grid-area: FTG; }
+#total-7 { grid-area: FTH; }
+#total-8 { grid-area: FTI; }
+#total-9 { grid-area: FTJ; }
+
+.fields {
+  display: inline-grid;
+  grid-template-areas:
+  'PNH PNH PNH PNH FFA FFA FFB FFB FFC FFC FFD FFD FFE FFE FFF FFF FFG FFG FFH FFH FFI FFI FFJ FFJ FFJ';
+}
+
+.player {
+  display: inline-grid;
+  grid-template-areas:
+  'PNN PNN PNN PNN FAA FAB FBA FBB FCA FCB FDA FDB FEA FEB DFA DFB FGA FGB FHA FHB FIA FIB FJA FJB FJC'
+  'PNN PNN PNN PNN FTA FTA FTB FTB FTC FTC FTD FTD FTE FTE FTF FTF FTG FTG FTH FTH FTI FTI FTJ FTJ FTJ';
+}
+
+/* #endregion */
+
+#player-name-header, #frame-0, #frame-1, #frame-2, #frame-3, 
+#frame-4, #frame-5, #frame-6, #frame-7, #frame-8, #total-0,
+#total-1, #total-2, #total-3, #total-4, #total-5, #total-6, 
+#total-7, #total-8 {
+  border-right-width: 1px;
+}
+
+#frame-0, #frame-1, #frame-2, #frame-3, #frame-4, #frame-5, 
+#frame-6, #frame-7, #frame-8 {
+  width: 121px;
+}
+
+/* .title, */
+div[id^='frame'], .first-ball, .next-ball, .last-ball, div[id^='total'] {
+  text-align: center;
+}
+
+.top-row, .first-ball, .next-ball, .last-ball, div[id^='total'] {
+  height: 50px;
+  line-height: 50px;
+}
+
+.first-ball, .next-ball, .last-ball {
+  width: 60px;
+}
+
+body, input {
+  font-family: Helvetica Neue;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+#player-name-header, #player-name {
+  width: 370px;
+  padding-left: 10px;
+}
+
+body {
+  margin-top: 0px;
+}
+
+div {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0px;
+}
+
+.title {
+  line-height: 100px;
+  padding-left: 11px;
+}
+
+.fields {
+  border-width: 1px;
+}
+
+#frame-9 {
+  width: 182px;
+}
+
+.player {
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+}
+
+#player-name {
+  height: 100px;
+  border-right-width: 1px;
+  line-height: 100px;
+}
+
+input {
+  width: 360px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.next-ball {
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+}
+
+.last-ball {
+  border-bottom-width: 1px;
+}
+
+.current, .current-with-border {
+  background-color: #ddeeff;
+}
+
+.current-with-border {
+  border-bottom-width: 1px;
+  border-color: #ddeeff;
+}
+
+@media screen and (max-width: 1678px) {
+
+  #frame-0, #frame-1, #frame-2, #frame-3, #frame-4, #frame-5, 
+  #frame-6, #frame-7, #frame-8 {
+    width: 101px;
+  }
+
+  .top-row, .first-ball, .next-ball, .last-ball, div[id^='total'] {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .first-ball, .next-ball, .last-ball {
+    width: 50px;
+  }
+
+  body, input {
+    font-size: 25px;
+  }
+
+  #player-name-header, #player-name {
+    width: 310px;
+  }
+
+  .title {
+    line-height: 80px;
+  }
+
+  #frame-9 {
+    width: 152px;
+  }
+
+  #player-name {
+    height: 80px;
+    line-height: 80px;
+  }
+
+  input {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1408px) {
+
+  #frame-0, #frame-1, #frame-2, #frame-3, #frame-4, #frame-5, 
+  #frame-6, #frame-7, #frame-8 {
+    width: 81px;
+  }
+
+  .top-row, .first-ball, .next-ball, .last-ball, div[id^='total'] {
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .first-ball, .next-ball, .last-ball {
+    width: 40px;
+  }
+
+  body, input {
+    font-size: 20px;
+  }
+
+  #player-name-header, #player-name {
+    width: 250px;
+  }
+
+  .title {
+    line-height: 70px;
+  }
+
+  #frame-9 {
+    width: 122px;
+  }
+
+  #player-name {
+    height: 60px;
+    line-height: 60px;
+  }
+
+  input {
+    width: 240px;
+  }
+}

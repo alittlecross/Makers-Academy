@@ -1,0 +1,16 @@
+<link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+
+<div id='banner'>Bookmark Manager</div>
+<form id='first-form' action='/sign_in' method='post' autocomplete='off'>
+  <input id='left-input' type='text' name='email' placeholder='email'>
+  <input id='right-input' type='password' name='password' placeholder='password'>
+  <input id='submit-button' type='submit' value='sign in'>
+</form>
+<form id='second-form' action='/sign_up' method='post' autocomplete='off'>
+  <input id='left-input' type='text' name='email' placeholder='email'>
+  <input id='right-input' type='password' name='password' placeholder='password'>
+  <input id='submit-button' type='submit' value='sign up'>
+</form>
+<div><%= flash[:sign_in] %></div>
+<div><%= flash[:sign_up] %></div>
+<div><%= flash[:sign_out] %></div>

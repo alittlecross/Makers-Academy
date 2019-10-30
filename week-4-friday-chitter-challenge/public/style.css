@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body, button, input, textarea, #sign_in, #sign_up {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a, button, #username {
+  font-weight: 400;
+  color: #0077ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 0px;
+  background: none;
+  cursor: pointer;
+}
+
+form {
+  margin: 0;
+}
+
+textarea {
+  display: inline-block;
+  resize: none;
+  margin: 0 4px 0 0;
+  border: none;
+  padding: 0;
+}
+
+#feed-border {
+  margin: auto;
+  width: 696px;
+}
+
+#left-column, #right-column {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#left-column {
+  width: 340px;
+}
+
+#right-column {
+  width: 350px;
+}
+
+#peep-form {
+  margin-block-end: 5px;
+}
+
+#since {
+  padding-bottom: 20px;
+  font-size: 15px;
+  color: #777777;
+}
+
+#form {
+  margin: auto;
+  width: 400px;
+}
+
+.form {
+  width: 400px;
+  height: 40px;
+  text-align: center;
+}
+
+.pad-me {
+  margin-bottom: 10px;
+}

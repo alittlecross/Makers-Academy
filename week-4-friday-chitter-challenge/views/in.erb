@@ -1,0 +1,16 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id='form'>
+
+    <form id='sign-in-form' action='/sign_in' method='post'></form>
+    <input class='form pad-me' id='sign-in' form='sign-in-form' type='text' name='email' placeholder='email'>
+    <input class='form' id='sign-in' form='sign-in-form' type='password' name='password' placeholder='password'>
+    <button class='form' form='sign-in-form' type='submit' value='submit'>sign in</button>
+    <div class='form' >go <a href='/'>back</a></div>
+    <div class='form' ><%= flash[:sign_in] %></div>
+
+  </div>
+</body>

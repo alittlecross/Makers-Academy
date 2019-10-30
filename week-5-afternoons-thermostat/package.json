@@ -1,0 +1,24 @@
+{
+  "name": "thermostat",
+  "version": "1.0.0",
+  "description": "a thermostat",
+  "main": "src/index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "SpecRunner.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alittlecross/thermostat.git"
+  },
+  "author": "alittlecross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alittlecross/thermostat/issues"
+  },
+  "homepage": "https://github.com/alittlecross/thermostat#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}

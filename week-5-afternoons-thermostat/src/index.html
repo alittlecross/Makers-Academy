@@ -1,0 +1,41 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' type='text/css' href='css/main.css'>
+    <script src='js/thermostat.js'></script>
+    <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+    <script src='js/interface.js'></script>
+  </head>
+
+  <body>
+    <div id='center-this'>
+
+      <div id='heading'>thermo</div>
+
+      <div class='line' id='home'>Current temperature at home: 
+        <div id='home-temperature'>20</div>&deg;C
+      </div>
+
+      <div class='line'>
+        <div id='bit'>Power saving is: </div> 
+        <div class='button' id='power-saving' type='button'>ON</div>
+        <div class='button' id='temperature-up' type='button'>&uarr;</div>
+        <div class='button' id='temperature-down' type='button'>&darr;</div>
+        <div class='button' id='temperature-reset' type='button'>RESET</div>
+      </div>
+
+      <div class='line'>Current temperature in 
+        <span id='city'></span>: 
+        <span id='city-temperature'></span>&deg;C
+      </div>
+
+      <form id='select-city'>
+        <input id='selected-city' type='text' placeholder='Enter a city'></input>
+        <div class='button' id='submit' type='summit'>RETURN</div>
+      </form>
+    
+    </div>
+  </body>
+
+</html>

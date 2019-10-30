@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>Spectrum</title>
+
+  <link rel='stylesheet' href='Spectrum.css'>
+
+  <!-- TEST FRAMEWORK -->
+  <script src='Spectrum.js'></script>
+  <script>
+    function Spectrum () { this.string = '' }
+    var spectrum = new Spectrum()
+  </script>
+
+  <!-- JACVASCRIPT FILES -->
+  <script src='../src/controller/controller.js'></script>
+  <script src='../src/model/list-model.js'></script>
+  <script src='../src/model/note-model.js'></script>
+  <script src='../src/view/list-view.js'></script>
+  <script src='../src/view/note-view.js'></script>
+
+  <!-- HELPER FILES -->
+  <script src='../Spec/Cassette.js'></script>
+
+  <!-- SPEC FILES -->
+  <script src='../Spec/controller/controller-Spec.js'></script>
+  <script src='../Spec/model/list-model-Spec.js'></script>
+  <script src='../Spec/model/note-model-Spec.js'></script>
+  <script src='../Spec/view/list-view-Spec.js'></script>
+  <script src='../Spec/view/note-view-Spec.js'></script>
+
+  <!-- RENDER FRONT-END -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() { 
+      document.getElementById('spectrum').innerHTML = spectrum.string
+    })
+  </script>
+
+</head>
+<body>
+  <div hidden id='test'></div>
+  <div id='spectrum'></div>
+</body>
+</html>

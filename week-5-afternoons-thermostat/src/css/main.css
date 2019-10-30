@@ -1,0 +1,90 @@
+/* #region fonts */
+
+@font-face {
+  font-family: 'basicLazer';
+  src: url('basicLAZER.woff') format('woff');
+}
+
+/* #endregion */
+
+body {
+  margin: 100px 0;
+  background: linear-gradient(#1a00c1, #000000, #000000);
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 30px;
+  text-align: center;
+}
+
+#center-this {
+  margin: auto;
+  width: fit-content;
+  height: 470px;
+  background: linear-gradient(#ff007b, #ff007b, #ff8400)
+}
+
+#heading {
+  padding: 0 80px;
+  background: -webkit-linear-gradient(#0033ff, #00ddff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'basicLazer';
+  font-size: 150px;
+}
+
+.line {
+  margin: 20px 50px;
+}
+
+#bit {
+  display: inline-block;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  padding: 4px 10px;
+  background: #000000;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+  vertical-align: middle;
+}
+
+#selected-city {
+  border: none;
+  border-radius: 10px;
+  height: 33px;
+  padding: 0 0 0 10px;
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+#power-saving {
+  min-width: 37px;
+}
+
+#home-temperature {
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  width: 50px;
+  background-color: #ffffff;
+}
+
+.low-usage {
+  color: #00ff77;
+}
+
+.medium-usage {
+  color: #000000;
+}
+
+.high-usage {
+  color: #ff0000;
+}

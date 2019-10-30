@@ -1,0 +1,49 @@
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+<div id='container'>
+  <div id='heading'>Battle!</div>
+
+  <div id='cards'>
+    <div id='player-1-card'>
+      <img src='images/0.png' alt='Avatar'>
+      <div id='friend-<%= @game.friend %>'><%= @game.players[0].name %>: <%= @game.players[0].points %></div>
+    </div>
+
+    <div id='options'>
+
+      <form action='/turn' method='post'>
+        <input type='hidden' name='heal' value='false'>
+        <input type='radio' id='punch' name='what' value='-1' checked>
+          <label for='punch'>punch</label><br>
+        <input type='radio' id='slingshot' name='what' value='-2'>
+          <label for='slingshot'>slingshot</label><br>
+        <input type='radio' id='hammer' name='what' value='-3'>
+          <label for='hammer'>hammer</label><br>
+        <input type='radio' id='axe' name='what' value='-4'>
+          <label for='axe'>axe</label><br><br>
+        <input type='radio' id='paralyse' name='with' value='0' checked>
+          <label for='paralyse'>paralyse</label><br>
+        <input type='radio' id='poison' name='with' value='1'>
+          <label for='poison'>poison</label><br>
+        <input type='radio' id='extra-effort' name='with' value='2'>
+          <label for='extra-effort'>extra effort</label><br><br>
+        <input type='submit' value='Attack !!!'>
+      </form>
+
+      <form action='/turn' method='post'>
+        <input type='hidden' name='heal' value='true'>
+        <input type='hidden' name='what' value='0'>
+        <input type='hidden' name='with' value='0'>
+        <input type='submit' value='Heal !!!'>
+      </form>
+
+    </div>
+
+    <div id='player-2-card'>
+      <img src='images/1.png' alt='Avatar'>
+      <div id='friend-<%= @game.foe %>'><%= @game.players[1].name %>: <%= @game.players[1].points %></div>
+    </div>
+  </div>
+
+  <div id='message'><%= @game.msg.msg %></div>
+</div>

@@ -1,0 +1,9 @@
+<link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+
+<div id='banner'>Bookmark Manager</div>
+<form action='/make_comment' method='post' autocomplete='off'>
+  <input type='hidden' name='bookmark_id' value='<%= @bookmark.bookmark_id %>'>
+  <input id='right-input' type='text' name='comment'>
+  <input id='submit-button' type='submit' value='comment'>
+  <a href='/bookmarks'>cancel</a>
+</form>

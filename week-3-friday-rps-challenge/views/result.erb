@@ -1,0 +1,17 @@
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+<div id='container'>
+
+  <div id='heading'>Rock, Paper, Scissors, Lizard, Spock.</div>
+
+  <div id='sentence-one'><%= @game.one.name %> chose <%= @game.one.weapon %>.</div>
+  <div id='sentence-one'><%= @game.two.name %> chose <%= @game.two.weapon %>.</div>
+  <div id='sentence-one'><%= @game.fight %></div>
+
+  <form id='choice' action='/choice_one'></form>
+
+  <div id='buttons'>
+    <button form='choice' type='submit' value='Again!'>Again!</button>
+  </div>
+
+</div>
